@@ -1,1 +1,1 @@
-*.sqlite*
+# Allow pushing database.sqlite to keep offline data

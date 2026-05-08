@@ -1,2 +1,2 @@
-*
+# Allow pushing images to keep offline data
 !.gitignore
