@@ -5,6 +5,9 @@ php artisan config:cache
 php artisan route:cache
 php artisan view:cache
 
+# Ensure SQLite database exists (fallback)
+touch database/database.sqlite
+
 # Run database migrations and seeders
 php artisan migrate --force
 php artisan db:seed --force
