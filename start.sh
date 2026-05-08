@@ -12,8 +12,9 @@ touch database/database.sqlite
 php artisan migrate --force
 php artisan db:seed --force
 
-# Fix permissions for SQLite database so Apache can read/write to it
+# Fix permissions for SQLite database and logs so Apache can read/write to them
 chown -R www-data:www-data /var/www/html/database
+chown -R www-data:www-data /var/www/html/storage
 
 # Start Apache in foreground
 apache2-foreground
