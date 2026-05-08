@@ -34,7 +34,7 @@
                     <!-- Content -->
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Content <span class="text-danger">*</span></label>
-                        <textarea name="content" id="content" class="form-control @error('content') is-invalid @enderror" rows="15" required>{{ old('content', $blog->content) }}</textarea>
+                        <textarea name="content" id="content" class="form-control @error('content') is-invalid @enderror" rows="15">{{ old('content', $blog->content) }}</textarea>
                         @error('content')<div class="invalid-feedback">{{ $message }}</div>@enderror
                     </div>
                 </div>
